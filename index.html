@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transform your body and mind with professional fitness training from Alex. Book your free session today!">
+    <meta property="og:title" content="Fit With Alex - Professional Fitness Training">
+    <meta property="og:description" content="Transform your body and mind with professional fitness training from Alex.">
+    <meta property="og:type" content="website">
+    <title>Fit With Alex | Professional Fitness Training</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #0f0f0f;
+            color: #f1f1f1;
+        }
+        h1, h2, h3, h4 {
+            font-family: 'Bebas Neue', sans-serif;
+            letter-spacing: 1px;
+        }
+        .hero-gradient {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1571019613454-1cb2f5b145f7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .accent-bg {
+            background-color: #ff003c;
+        }
+        .accent-text {
+            color: #ff003c;
+        }
+        .accent-border {
+            border-color: #ff003c;
+        }
+        .hover-accent:hover {
+            color: #ff003c;
+        }
+        .btn-accent {
+            background-color: #ff003c;
+            transition: all 0.3s ease;
+        }
+        .btn-accent:hover {
+            background-color: #d10032;
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(255, 0, 60, 0.2);
+        }
+        .testimonial-card {
+            background-color: #1a1a1a;
+            transition: all 0.3s ease;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 0, 60, 0.1);
+        }
+        .service-card {
+            background-color: #1a1a1a;
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(255, 0, 60, 0.1);
+        }
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #ff003c;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .mobile-menu {
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="bg-black py-4 px-6 sticky top-0 z-50 shadow-lg">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <a href="#" class="text-3xl font-bold accent-text">FIT WITH ALEX</a>
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <div class="hidden md:flex space-x-8">
+                <a href="#" class="nav-link text-white hover:text-gray-300">Home</a>
+                <a href="#about" class="nav-link text-white hover:text-gray-300">About</a>
+                <a href="#services" class="nav-link text-white hover:text-gray-300">Services</a>
+                <a href="#testimonials" class="nav-link text-white hover:text-gray-300">Testimonials</a>
+                <a href="#contact" class="nav-link text-white hover:text-gray-300">Contact</a>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="menu-toggle" class="text-white focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu hidden md:hidden bg-black py-4 px-6 absolute left-0 right-0">
+            <div class="flex flex-col space-y-4">
+                <a href="#" class="nav-link text-white hover:text-gray-300">Home</a>
+                <a href="#about" class="nav-link text-white hover:text-gray-300">About</a>
+                <a href="#services" class="nav-link text-white hover:text-gray-300">Services</a>
+                <a href="#testimonials" class="nav-link text-white hover:text-gray-300">Testimonials</a>
+                <a href="#contact" class="nav-link text-white hover:text-gray-300">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-screen flex items-center justify-center text-center py-20 px-6">
+        <div class="container mx-auto max-w-4xl">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 text-white">TRANSFORM YOUR BODY, ELEVATE YOUR LIFE</h1>
+            <p class="text-xl md:text-2xl mb-10 text-gray-300">Professional fitness training tailored to your goals and lifestyle</p>
+            <a href="#contact" class="btn-accent text-white font-bold py-4 px-10 rounded-full text-lg inline-block">BOOK YOUR FREE SESSION</a>
+            
+            <div class="mt-16 flex justify-center space-x-6">
+                <a href="#" class="text-white hover-accent text-2xl"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-white hover-accent text-2xl"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-white hover-accent text-2xl"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 px-6 bg-gray-900">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl md:text-5xl font-bold mb-16 text-center">MEET ALEX</h2>
+            
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=725&q=80" 
+                         alt="Alex the Trainer" 
+                         class="rounded-lg shadow-xl w-full h-auto">
+                </div>
+                
+                <div class="md:w-1/2">
+                    <h3 class="text-3xl font-bold mb-6 accent-text">CERTIFIED FITNESS EXPERT</h3>
+                    <p class="text-lg mb-6 text-gray-300">
+                        With over 10 years of experience in the fitness industry, I've helped hundreds of clients achieve their health and fitness goals. My approach combines science-based training with motivational coaching to create sustainable results.
+                    </p>
+                    <p class="text-lg mb-6 text-gray-300">
+                        I believe fitness should be accessible to everyone, regardless of age, gender, or fitness level. My programs are designed to challenge you while respecting your body's limits.
+                    </p>
+                    
+                    <div class="grid grid-cols-2 gap-4 mt-8">
+                        <div class="flex items-center">
+                            <div class="accent-bg rounded-full p-2 mr-4">
+                                <i class="fas fa-medal text-white"></i>
+                            </div>
+                            <span class="font-medium">NASM Certified</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="accent-bg rounded-full p-2 mr-4">
+                                <i class="fas fa-heartbeat text-white"></i>
+                            </div>
+                            <span class="font-medium">Nutrition Specialist</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="accent-bg rounded-full p-2 mr-4">
+                                <i class="fas fa-dumbbell text-white"></i>
+                            </div>
+                            <span class="font-medium">Strength Training</span>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="accent-bg rounded-full p-2 mr-4">
+                                <i class="fas fa-running text-white"></i>
+                            </div>
+                            <span class="font-medium">Functional Fitness</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 px-6 bg-black">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-center">MY SERVICES</h2>
+            <p class="text-xl text-center mb-16 text-gray-400 max-w-3xl mx-auto">Customized training programs designed to help you reach your fitness goals efficiently and safely.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card rounded-lg p-8 shadow-lg">
+                    <div class="accent-bg rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-user text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-center">1-on-1 Coaching</h3>
+                    <p class="text-gray-400 mb-6 text-center">Personalized training sessions tailored to your specific goals, fitness level, and schedule.</p>
+                    <ul class="space-y-2 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check accent-text mr-2"></i>
+                            <span>Custom workout plans</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check accent-text mr-2"></i>
+                            <span>Progress tracking</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check accent-text mr-2"></i>
+                            <span>Accountability coaching</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-3xl font-bold">49€</span>
+                        <span class="text-gray-400">/session</span>
+                    </div>
+                    <div class="text-center mt-6">
+                        <a href="#contact" class="btn-accent text-white font-bold py-3 px-8 rounded-full text-sm inline-block">BOOK NOW</a>
+                    </div>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card rounded-lg p-8 shadow-lg border-2 accent-border transform scale-105">
+                    <div class="accent-bg rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-laptop text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-center">Online Programs</h3>
+                    <p class="text-gray-400 mb-6 text-center">Comprehensive training programs you can follow from anywhere in the world.</p>
+                    <ul class="space-y-2 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check accent-text mr-2"></i>
+                            <span>Customized workout plans</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check accent-text mr-2"></i>
+                            <span>Video demonstrations</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check accent-text mr-2"></i>
+                            <span>Weekly check-ins</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check accent-text mr-2"></i>
+                            <span>Nutrition guidance</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-3xl font-bold">100€</span>
+                        <span class="text-gray-400">/month</span>
+                    </div>
+                    <div class="text-center mt-6">
+                        <a href="#contact" class="btn-accent text-white font-bold py-3 px-8 rounded-full text-sm inline-block">BOOK NOW</a>
+                    </div>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card rounded-lg p-8 shadow-lg">
+                    <div class="accent-bg rounded-full w-16 h-16 flex items-center justify-center mb-6 mx-auto">
+                        <i class="fas fa-utensils text-white text-2xl"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4 text-center">Nutrition Plans</h3>
+                    <p class="text-gray-400 mb-6 text-center">Customized meal plans designed to complement your training and lifestyle.</p>
+                    <ul class="space-y-2 mb-8">
+                        <li class="flex items-center">
+                            <i class="fas fa-check accent-text mr-2"></i>
+                            <span>Personalized meal plans</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check accent-text mr-2"></i>
+                            <span>Macro calculations</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-check accent-text mr-2"></i>
+                            <span>Supplement guidance</span>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <span class="text-3xl font-bold"></span>
+                        <span class="text-gray-400">/month</span>
+                    </div>
+                    <div class="text-center mt-6">
+                        <a href="#contact" class="btn-accent text-white font-bold py-3 px-8 rounded-full text-sm inline-block">BOOK NOW</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 px-6 bg-gray-900">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-center">SUCCESS STORIES</h2>
+            <p class="text-xl text-center mb-16 text-gray-400 max-w-3xl mx-auto">Don't just take our word for it. Here's what our clients have to say.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card rounded-lg p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="Sarah J." 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="text-xl font-bold">Maria K.</h4>
+                            <p class="text-gray-400">Lost 28 lbs</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">
+                        "Working with Alex changed my life. I lost 28 pounds in 4 months and gained so much confidence. His approach is challenging but never intimidating, and he makes fitness fun!"
+                    </p>
+                    <div class="flex mt-4 accent-text">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card rounded-lg p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                             alt="Michael T." 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="text-xl font-bold">Mike O.</h4>
+                            <p class="text-gray-400">Gained 15 lbs muscle</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">
+                        "As someone who struggled to gain muscle for years, Alex's program was a game-changer. I packed on 15 pounds of lean muscle in 6 months. His nutrition advice was just as valuable as the workouts."
+                    </p>
+                    <div class="flex mt-4 accent-text">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card rounded-lg p-8 shadow-lg">
+                    <div class="flex items-center mb-6">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" 
+                             alt="Lisa R." 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="text-xl font-bold">Antonella P.</h4>
+                            <p class="text-gray-400">Ran first marathon</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-300 italic">
+                        "Alex trained me for my first marathon at age 42. Not only did I finish, but I felt strong the whole way. His attention to form and recovery made all the difference."
+                    </p>
+                    <div class="flex mt-4 accent-text">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6 bg-black">
+        <div class="container mx-auto max-w-4xl text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">READY TO TRANSFORM YOUR LIFE?</h2>
+            <p class="text-xl mb-10 text-gray-400">Take the first step towards a healthier, stronger you. Book your free consultation today.</p>
+            <a href="#contact" class="btn-accent text-white font-bold py-4 px-10 rounded-full text-lg inline-block">BOOK YOUR FREE SESSION</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-6 bg-gray-900">
+        <div class="container mx-auto max-w-6xl">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-center">GET IN TOUCH</h2>
+            <p class="text-xl text-center mb-16 text-gray-400 max-w-3xl mx-auto">Have questions or ready to start your fitness journey? Reach out today.</p>
+            
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <form class="space-y-6">
+                        <div>
+                            <label for="name" class="block text-gray-300 mb-2">Your Name</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-gray-300 mb-2">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-300 mb-2">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white">
+                        </div>
+                        <div>
+                            <label for="service" class="block text-gray-300 mb-2">Service Interested In</label>
+                            <select id="service" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white">
+                                <option value="">Select a service</option>
+                                <option value="1-on-1">1-on-1 Coaching</option>
+                                <option value="online">Online Programs</option>
+                                <option value="nutrition">Nutrition Plans</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-gray-300 mb-2">Your Message</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white"></textarea>
+                        </div>
+                        <button type="submit" class="btn-accent text-white font-bold py-4 px-10 rounded-full text-lg w-full">SEND MESSAGE</button>
+                    </form>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-800 p-8 rounded-lg h-full">
+                        <h3 class="text-2xl font-bold mb-6">CONTACT INFORMATION</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <div class="accent-bg rounded-full p-3 mr-4">
+                                    <i class="fas fa-map-marker-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">LOCATION</h4>
+                                    <p class="text-gray-400">Stadiou 12<br>Athens 15772, Greece</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="accent-bg rounded-full p-3 mr-4">
+                                    <i class="fas fa-phone-alt text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">PHONE</h4>
+                                    <p class="text-gray-400">6936489105</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="accent-bg rounded-full p-3 mr-4">
+                                    <i class="fas fa-envelope text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">EMAIL</h4>
+                                    <p class="text-gray-400">alex@fitwithalex.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="accent-bg rounded-full p-3 mr-4">
+                                    <i class="fas fa-clock text-white"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold mb-1">HOURS</h4>
+                                    <p class="text-gray-400">Monday - Friday: 8am - 8pm<br>Saturday: 8am - 2pm<br>Sunday: Closed</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-10">
+                            <h4 class="font-bold mb-4">FOLLOW ME</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="bg-gray-700 hover:bg-gray-600 text-white w-10 h-10 rounded-full flex items-center justify-center">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="bg-gray-700 hover:bg-gray-600 text-white w-10 h-10 rounded-full flex items-center justify-center">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="bg-gray-700 hover:bg-gray-600 text-white w-10 h-10 rounded-full flex items-center justify-center">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                                <a href="#" class="bg-gray-700 hover:bg-gray-600 text-white w-10 h-10 rounded-full flex items-center justify-center">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black py-12 px-6">
+        <div class="container mx-auto max-w-6xl">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#" class="text-3xl font-bold accent-text">FIT WITH ALEX</a>
+                    <p class="text-gray-500 mt-2">Transform your body, elevate your life.</p>
+                </div>
+                
+                <div class="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0">
+                    <a href="#" class="text-gray-400 hover:text-white">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-white">About</a>
+                    <a href="#services" class="text-gray-400 hover:text-white">Services</a>
+                    <a href="#testimonials" class="text-gray-400 hover:text-white">Testimonials</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white">Contact</a>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 mb-4 md:mb-0">© 2023 Fit With Alex. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-white">Privacy Policy</a>
+                    <a href="#" class="text-gray-500 hover:text-white">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    // Close mobile menu if open
+                    const mobileMenu = document.getElementById('mobile-menu');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        mobileMenu.classList.add('hidden');
+                    }
+                    
+                    // Scroll to target
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        // Form submission (simulated)
+        const contactForm = document.querySelector('form');
+        if (contactForm) {
+            contactForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                // In a real implementation, you would send the form data to a server
+                alert('Thank you for your message! We will get back to you soon.');
+                this.reset();
+            });
+        }
+    </script>
+</body>
+</html>
